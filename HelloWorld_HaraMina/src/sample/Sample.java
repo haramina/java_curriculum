@@ -1,9 +1,10 @@
+package sample;
 
-public class Javatest {
+public class Sample {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-//aaa
+		System.out.println("Hello,World");
 	}
 
 }
