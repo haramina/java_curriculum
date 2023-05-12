@@ -3,7 +3,8 @@ package sample;
 public class SelfIntroduction {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
+		// 自分の名前、年齢、趣味を記述
+		
 		String name = "原 美菜";
 		int age = 25;
 		String hobby = "映画鑑賞";
