@@ -176,9 +176,9 @@ public class Qes1_13 {
 		
 		//11.8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
 		String date1 = Integer.toString(age6);//年齢
-		String date2 = Double.valueOf(height6).toString();//身長
-		String date3= Double.valueOf(weight6).toString();//体重
-		System.out.println(date1 + date2 + date3);//繋げる
+		String date2 = Double.toString(height6);//身長
+		String date3= Double.toString(weight6);//体重
+		System.out.println(date1 + date2 + date3);//繋げる処理
 		
 		//12.11で変換した【年齢・身長】を整数型に変換して出力してください
 		int iAge = Integer.parseInt(date1);//年齢
