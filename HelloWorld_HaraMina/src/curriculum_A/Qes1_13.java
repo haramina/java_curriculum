@@ -24,23 +24,23 @@ public class Qes1_13 {
 		boolean boolA;
 		
 		//2.それぞれのローカル変数をローカル内でそれぞれの初期値を代入し初期化してください
-		//・バイト型
+		//・バイト型の初期値を設定
 		byNum = 0;
-		//・短整数型
+		//・短整数型の初期値を設定
 		shNum = 0;
-		//・整数型
+		//・整数型の初期値を設定
 		inNum = 0;
-		//・長整数型
+		//・長整数型の初期値を設定
 		loNum = 0;
-		//・単精度浮動小数点数型
+		//・単精度浮動小数点数型の初期値を設定
 		flNum = 0.0F;
-		//・倍精度浮動小数点数型
+		//・倍精度浮動小数点数型の初期値を設定
 		doNum = 0.0;
-		//・文字型
+		//・文字型の初期値を設定
 		myChar = '\u0000';
-		//・文字列型
+		//・文字列型の初期値を設定
 		name =  "\u0000";
-		//・ブーリアン型
+		//・ブーリアン型の初期値を設定
 		boolA = false;
 		
 		//3.初期化をしたそれぞれの変数に下記の値を代入してください
@@ -85,7 +85,7 @@ public class Qes1_13 {
 		　int num1=23;
 		　System.out.println("ハローJAVA"+(num+num1));*/
 		
-		int num=20;
+		int num=20;//整数型に修正
 		int num1=23;
 		System.out.println("ハローJAVA"+(num+num1));
 		
@@ -94,104 +94,103 @@ public class Qes1_13 {
 		 * 『山田太郎 18歳 170.5cm 62.2kg 寿司』*/
 		
 		//「初めまして○○です」
-		String name6="山田太郎";
-		System.out.println("初めまして" + name6 + "です");
+		String name6="山田太郎";//代入 
+		System.out.println("初めまして" + name6 + "です");//出力
 		
 		//「年齢は○○歳です」
-		int age6 = 18;
-		System.out.println("年齢は" + age6 + "歳です");
+		int age6 = 18;//代入 
+		System.out.println("年齢は" + age6 + "歳です");//出力
 		
 		//「身長は○○cmです」
-		double height6 = 170.5;
-		System.out.println("身長は" + height6 + "cmです");
+		double height6 = 170.5;//代入 
+		System.out.println("身長は" + height6 + "cmです");//出力
 	
 		//「体重は○○kgです」
-		double weight6 = 62.2;
-		System.out.println("体重は" + weight6 + "kgです");
+		double weight6 = 62.2;//代入 
+		System.out.println("体重は" + weight6 + "kgです");//出力
 		
 		//「好きな食べ物は○○です」
-		String lovefood6 = "寿司";
-		System.out.println("好きな食べ物は" + lovefood6 + "です");
+		String lovefood6 = "寿司";//代入 
+		System.out.println("好きな食べ物は" + lovefood6 + "です");//出力
 		
 		/*7.6で作成した自己紹介に続いてBMIが出力されるようにしてください
 		 * ただし計算は数値を直書きせず、全て変数を使ってすること
 		 * 「BMIは○○です」 */
-		//BMI=体重（kg）÷ (身長（m）)2
-		double bmi = weight6 / ((height6 / 100) * (height6 / 100));
-		System.out.println("BMIは" + bmi + "です");
+		double bmi = weight6 / ((height6 / 100) * (height6 / 100));//BMI計算式 体重(kg) / (身長(m) * 身長(m))
+		System.out.println("BMIは" + bmi + "です");//出力
 		
 		//8.6で宣言した変数に再代入し下記の通りコンソールに出力してください
 		//　初めまして鈴木一郎です
-		name6="鈴木一郎";
-		System.out.println("初めまして" + name6 + "です");
+		name6="鈴木一郎";//代入 
+		System.out.println("初めまして" + name6 + "です");//出力
 		
 		//　年齢は24歳です
-		age6 = 24;
-		System.out.println("年齢は" + age6 + "歳です");
+		age6 = 24;//代入 
+		System.out.println("年齢は" + age6 + "歳です");//出力
 		
 		//身長168.5cmです
-		height6 = 168.5;
-		System.out.println("身長は" + height6 + "cmです");
+		height6 = 168.5;//代入 
+		System.out.println("身長は" + height6 + "cmです");//出力
 		
 		//体重は64.2kgです
-		weight6 = 64.2;
-		System.out.println("体重は" + weight6 + "kgです");
+		weight6 = 64.2;//代入 
+		System.out.println("体重は" + weight6 + "kgです");//出力
 		
 		//好きな食べ物はオムライスです
-		lovefood6 = "オムライス";
-		System.out.println("好きな食べ物は" + lovefood6 + "です");
+		lovefood6 = "オムライス";//代入 
+		System.out.println("好きな食べ物は" + lovefood6 + "です");//出力
 		
 		//BMIは22.6です
-		double bmi2 = weight6 / ((height6 / 100) * (height6 / 100));
-		System.out.println("BMIは" + bmi2 + "です");
+		double bmi2 = weight6 / ((height6 / 100) * (height6 / 100));//BMI計算式 体重(kg) / (身長(m) * 身長(m))
+		System.out.println("BMIは" + bmi2 + "です");//出力
 		
 		//9.8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
 		//　初めまして鈴木一郎です
-		name6="鈴木一郎";
-		System.out.println("初めまして" + name6 + "です");
+		name6="鈴木一郎";//代入
+		System.out.println("初めまして" + name6 + "です");//出力
 		
 		//　年齢は48歳です
-		age6 = 24 * 2;                                                                       ;
-		System.out.println("年齢は" + age6 + "歳です");
+		age6 = 24 * 2;//代入                                                              ;
+		System.out.println("年齢は" + age6 + "歳です");//出力
 		
 		//　身長337.0cmです
-		height6 = 168.5 * 2;
-		System.out.println("身長は" + height6 + "cmです");
+		height6 = 168.5 * 2;//代入
+		System.out.println("身長は" + height6 + "cmです");//出力
 		
 		//　体重は128.4kgです
-		weight6 = 64.2 * 2;
-		System.out.println("体重は" + weight6 + "kgです");
+		weight6 = 64.2 * 2;//代入
+		System.out.println("体重は" + weight6 + "kgです");//出力
 		
 		//　好きな食べ物はオムライスです
-		lovefood6 = "オムライス";
-		System.out.println("好きな食べ物は" + lovefood6 + "です");
+		lovefood6 = "オムライス";//代入
+		System.out.println("好きな食べ物は" + lovefood6 + "です");//出力
 		
 		//　BMIは11.31です
-		double bmi3 = weight6 / ((height6 / 100) * (height6 / 100));
-		System.out.println("BMIは" + bmi3 + "です");
+		double bmi3 = weight6 / ((height6 / 100) * (height6 / 100));//BMI計算式 体重(kg) / (身長(m) * 身長(m))
+		System.out.println("BMIは" + bmi3 + "です");//出力
 		
 		//10.8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
 		boolean over25; // boolean型の変数を宣言
-        over25 = (age6 >= 25); // 【条件式】
-		System.out.println(over25);
+		over25 = (age6 >= 25); // 【条件式】
+		System.out.println(over25);//出力
 		
 		//11.8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
 		String date1 = Integer.toString(age6);//年齢
-		String date2 = Double.valueOf(height6).toString();//身長
-		String date3= Double.valueOf(weight6).toString();//体重
-		System.out.println(date1 + date2 + date3);//繋げる
+		String date2 = Double.toString(height6);//身長
+		String date3= Double.toString(weight6);//体重
+		System.out.println(date1 + date2 + date3);//繋げる処理
 		
 		//12.11で変換した【年齢・身長】を整数型に変換して出力してください
 		int iAge = Integer.parseInt(date1);//年齢
-		System.out.println(iAge);
+		System.out.println(iAge);//出力
 		
 		int iHeight = Integer.parseInt(date2);//身長
-		System.out.println(iHeight);
+		System.out.println(iHeight);//出力
 		
 		//13.12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
 		boolean over; // boolean型の変数を宣言
-        over = (iAge >= 25 || iHeight >= 160); // 【条件式】
-		System.out.println(over);
+		over = (iAge >= 25 || iHeight >= 160); // 【条件式】
+		System.out.println(over);//出力
 	}
 
 }
