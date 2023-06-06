@@ -64,6 +64,7 @@ public class Qes1_13 {
 		boolA = true;
 		
 		//4.下記の通りにコンソール出力されるようにしてください
+		System.out.println("Q4"); // 課題名出力
 		//11110
 		System.out.println(byNum + shNum + inNum + loNum);
 		//20
@@ -87,18 +88,19 @@ public class Qes1_13 {
 		　int num1=23;
 		　System.out.println("ハローJAVA"+(num+num1));*/
 		
-		int num=20; // 整数型に修正
-		int num1=23;
-		System.out.println("ハローJAVA" + (num+num1));
+		System.out.println("Q5"); // 課題名出力
+		int num = 20; // 整数型に修正
+		int num1 = 23;
+		System.out.println("ハローJAVA" + (num + num1));
 		
 		System.out.println(); // 改行
 		
 		/*6.『』で囲われた人の情報を変数にして、formatの通りコンソールに出力してください
 		 * ローカル変数に代入し○○に入れてください
 		 * 『山田太郎 18歳 170.5cm 62.2kg 寿司』*/
-		
+		System.out.println("Q6"); // 課題名出力
 		//「初めまして○○です」
-		String name6="山田太郎"; // 代入 
+		String name6 = "山田太郎"; // 代入 
 		System.out.println("初めまして" + name6 + "です"); // 出力
 		
 		//「年齢は○○歳です」
@@ -122,66 +124,73 @@ public class Qes1_13 {
 		/*7.6で作成した自己紹介に続いてBMIが出力されるようにしてください
 		 * ただし計算は数値を直書きせず、全て変数を使ってすること
 		 * 「BMIは○○です」 */
+		System.out.println("Q7"); // 課題名出力
 		double bmi = weight6 / ((height6 / 100) * (height6 / 100)); // BMI計算式 体重(kg) / (身長(m) * 身長(m))
 		double roundedBMI = Math.round(bmi * 10.0) / 10.0; // 小数点第一位までに丸める
 		System.out.println("BMIは" + roundedBMI + "です"); // 出力
 		
+		System.out.println(); // 改行
+		
 		//8.6で宣言した変数に再代入し下記の通りコンソールに出力してください
-		//　初めまして鈴木一郎です
+		System.out.println("Q8"); // 課題名出力
+		// 初めまして鈴木一郎です
 		name6="鈴木一郎"; // 代入 
 		System.out.println("初めまして" + name6 + "です"); // 出力
 		
-		//　年齢は24歳です
-		age6 = 24;//代入 
-		System.out.println("年齢は" + age6 + "歳です");//出力
+		// 年齢は24歳です
+		age6 = 24; // 代入 
+		System.out.println("年齢は" + age6 + "歳です"); // 出力
 		
-		//身長168.5cmです
-		height6 = 168.5;//代入 
-		System.out.println("身長は" + height6 + "cmです");//出力
+		// 身長168.5cmです
+		height6 = 168.5 ; // 代入 
+		System.out.println("身長は" + height6 + "cmです"); // 出力
 		
-		//体重は64.2kgです
-		weight6 = 64.2;//代入 
-		System.out.println("体重は" + weight6 + "kgです");//出力
+		// 体重は64.2kgです
+		weight6 = 64.2; // 代入 
+		System.out.println("体重は" + weight6 + "kgです"); // 出力
 		
-		//好きな食べ物はオムライスです
-		lovefood6 = "オムライス";//代入 
-		System.out.println("好きな食べ物は" + lovefood6 + "です");//出力
+		// 好きな食べ物はオムライスです
+		lovefood6 = "オムライス"; // 代入 
+		System.out.println("好きな食べ物は" + lovefood6 + "です"); // 出力
 		
-		//BMIは22.6です
-		double bmi2 = weight6 / ((height6 / 100) * (height6 / 100));//BMI計算式 体重(kg) / (身長(m) * 身長(m))
+		// BMIは22.6です
+		double bmi2 = weight6 / ((height6 / 100) * (height6 / 100)); // BMI計算式 体重(kg) / (身長(m) * 身長(m))
 		double roundedBMI2 = Math.round(bmi2 * 10.0) / 10.0; // 小数点第一位までに丸める
-		System.out.println("BMIは" + roundedBMI2 + "です");//出力
-		System.out.println();
+		System.out.println("BMIは" + roundedBMI2 + "です"); // 出力
+		
+		System.out.println(); // 改行
 		
 		//9.8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
-		//　初めまして鈴木一郎です
+		System.out.println("Q9"); // 課題名出力
+		// 初めまして鈴木一郎です
 		name6="鈴木一郎"; // 代入
 		System.out.println("初めまして" + name6 + "です"); // 出力
 		
 		//　年齢は48歳です
-		age6 += age6; //自己代入                                                              ;
-		System.out.println("年齢は" + age6 + "歳です"); //出力
+		age6 += age6; // 自己代入                                                              ;
+		System.out.println("年齢は" + age6 + "歳です"); // 出力
 		
 		//　身長337.0cmです
 		height6 += height6; // 自己代入
-		System.out.println("身長は" + height6 + "cmです");// 出力
+		System.out.println("身長は" + height6 + "cmです"); // 出力
 		
 		//　体重は128.4kgです
-		weight6 += weight6;// 自己代入
+		weight6 += weight6; // 自己代入
 		System.out.println("体重は" + weight6 + "kgです"); // 出力
 		
 		//　好きな食べ物はオムライスです
 		lovefood6 = "オムライス"; // 代入
-		System.out.println("好きな食べ物は" + lovefood6 + "です");// 出力
+		System.out.println("好きな食べ物は" + lovefood6 + "です"); // 出力
 		
 		//　BMIは11.31です
 		double bmi3 = weight6 / ((height6 / 100) * (height6 / 100)); // BMI計算式 体重(kg) / (身長(m) * 身長(m))
 		double roundedBMI3 = Math.round(bmi3 * 100.0) / 100.0; // 小数点第二位までに丸める
 		System.out.println("BMIは" + roundedBMI3 + "です"); // 出力
-		
-		System.out.println();
+
+		System.out.println(); // 改行
 		
 		//10.8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
+		System.out.println("Q10"); // 課題名出力
 		// 問8の値を再代入
 		name6 = "鈴木一郎";
 		age6 = 24;
@@ -192,9 +201,10 @@ public class Qes1_13 {
 		boolean over25 = (age6 >= 25); // 条件式
 		System.out.println(over25); // 出力
 		
-		System.out.println();
+		System.out.println(); // 改行
 		
 		//11.8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
+		System.out.println("Q11"); // 課題名出力
 		String date1 = Integer.toString(age6); // 年齢
 		String date2 = Double.toString(height6); // 身長
 		String date3= Double.toString(weight6); // 体重
@@ -203,6 +213,7 @@ public class Qes1_13 {
 		System.out.println(); // 改行
 		
 		//12.11で変換した【年齢・身長】を整数型に変換して出力してください
+		System.out.println("Q12"); // 課題名出力
 		int iAge = Integer.parseInt(date1); // 年齢
 		System.out.println(iAge); // 出力
 
@@ -212,8 +223,9 @@ public class Qes1_13 {
 		System.out.println(); // 改行
 		
 		//13.12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
+		System.out.println("Q13"); // 課題名出力
 		boolean over = (iAge >= 25) || (iHeight >= 160); // 条件式
-		System.out.println(over); // 出力
+		System.out.println(over);  // 出力
 		
 		System.out.println(); // 改行
 	}
