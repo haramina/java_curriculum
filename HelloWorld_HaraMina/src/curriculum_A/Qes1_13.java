@@ -1,7 +1,7 @@
 package curriculum_A;
 
 public class Qes1_13 {
-
+	
 	public static void main(String[] args) {
 		//1.下記9個をローカル変数として宣言のみしてください
 		//・バイト型
@@ -186,7 +186,7 @@ public class Qes1_13 {
 		double bmi3 = weight6 / ((height6 / 100) * (height6 / 100)); // BMI計算式 体重(kg) / (身長(m) * 身長(m))
 		double roundedBMI3 = Math.round(bmi3 * 100.0) / 100.0; // 小数点第二位までに丸める
 		System.out.println("BMIは" + roundedBMI3 + "です"); // 出力
-
+		
 		System.out.println(); // 改行
 		
 		//10.8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
@@ -216,7 +216,7 @@ public class Qes1_13 {
 		System.out.println("Q12"); // 課題名出力
 		int iAge = Integer.parseInt(date1); // 年齢
 		System.out.println(iAge); // 出力
-
+		
 		int iHeight = (int) Double.parseDouble(date2); // 身長
 		System.out.println(iHeight); // 出力
 		
@@ -229,5 +229,5 @@ public class Qes1_13 {
 		
 		System.out.println(); // 改行
 	}
-
+	
 }
