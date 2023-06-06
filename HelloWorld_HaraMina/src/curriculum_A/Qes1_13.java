@@ -31,7 +31,7 @@ public class Qes1_13 {
 		//・整数型の初期値を設定
 		inNum = 0;
 		//・長整数型の初期値を設定
-		loNum = 0;
+		loNum = 0L;
 		//・単精度浮動小数点数型の初期値を設定
 		flNum = 0.0F;
 		//・倍精度浮動小数点数型の初期値を設定
@@ -39,7 +39,7 @@ public class Qes1_13 {
 		//・文字型の初期値を設定
 		myChar = '\u0000';
 		//・文字列型の初期値を設定
-		name =  "\u0000";
+		name =  null;
 		//・ブーリアン型の初期値を設定
 		boolA = false;
 		
@@ -78,6 +78,7 @@ public class Qes1_13 {
 		System.out.println(doNum / shNum);
 		//-90 10引く100をする
 		System.out.println(shNum - byNum);
+		System.out.println();
 		
 		/*5.次のプログラムを実行すると「ハローJAVA2023」という結果が表示されます。
 		「ハローJAVA43」と表示とさせたいのですが、意図通りに動きません。正しく動作するように修正してください。
@@ -88,6 +89,7 @@ public class Qes1_13 {
 		int num=20;//整数型に修正
 		int num1=23;
 		System.out.println("ハローJAVA"+(num+num1));
+		System.out.println();
 		
 		/*6.『』で囲われた人の情報を変数にして、formatの通りコンソールに出力してください
 		 * ローカル変数に代入し○○に入れてください
@@ -112,12 +114,14 @@ public class Qes1_13 {
 		//「好きな食べ物は○○です」
 		String lovefood6 = "寿司";//代入 
 		System.out.println("好きな食べ物は" + lovefood6 + "です");//出力
+		System.out.println();
 		
 		/*7.6で作成した自己紹介に続いてBMIが出力されるようにしてください
 		 * ただし計算は数値を直書きせず、全て変数を使ってすること
 		 * 「BMIは○○です」 */
 		double bmi = weight6 / ((height6 / 100) * (height6 / 100));//BMI計算式 体重(kg) / (身長(m) * 身長(m))
-		System.out.println("BMIは" + bmi + "です");//出力
+		double roundedBMI = Math.round(bmi * 10.0) / 10.0; // 小数点第一位までに丸める
+		System.out.println("BMIは" + roundedBMI + "です");//出力
 		
 		//8.6で宣言した変数に再代入し下記の通りコンソールに出力してください
 		//　初めまして鈴木一郎です
@@ -142,7 +146,9 @@ public class Qes1_13 {
 		
 		//BMIは22.6です
 		double bmi2 = weight6 / ((height6 / 100) * (height6 / 100));//BMI計算式 体重(kg) / (身長(m) * 身長(m))
-		System.out.println("BMIは" + bmi2 + "です");//出力
+		double roundedBMI2 = Math.round(bmi2 * 10.0) / 10.0; // 小数点第一位までに丸める
+		System.out.println("BMIは" + roundedBMI2 + "です");//出力
+		System.out.println();
 		
 		//9.8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
 		//　初めまして鈴木一郎です
@@ -150,15 +156,15 @@ public class Qes1_13 {
 		System.out.println("初めまして" + name6 + "です");//出力
 		
 		//　年齢は48歳です
-		age6 = 24 * 2;//代入                                                              ;
+		age6 += age6;//自己代入                                                              ;
 		System.out.println("年齢は" + age6 + "歳です");//出力
 		
 		//　身長337.0cmです
-		height6 = 168.5 * 2;//代入
+		height6 += height6;//自己代入
 		System.out.println("身長は" + height6 + "cmです");//出力
 		
 		//　体重は128.4kgです
-		weight6 = 64.2 * 2;//代入
+		weight6 += weight6;//自己代入
 		System.out.println("体重は" + weight6 + "kgです");//出力
 		
 		//　好きな食べ物はオムライスです
@@ -167,12 +173,23 @@ public class Qes1_13 {
 		
 		//　BMIは11.31です
 		double bmi3 = weight6 / ((height6 / 100) * (height6 / 100));//BMI計算式 体重(kg) / (身長(m) * 身長(m))
-		System.out.println("BMIは" + bmi3 + "です");//出力
+		double roundedBMI3 = Math.round(bmi3 * 100.0) / 100.0; // 小数点第二位までに丸める
+		System.out.println("BMIは" + roundedBMI3 + "です");//出力
+		
+		System.out.println();
 		
 		//10.8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
-		boolean over25; // boolean型の変数を宣言
-		over25 = (age6 >= 25); // 【条件式】
+		// 問8の値を再代入
+		name6 = "鈴木一郎";
+		age6 = 24;
+		height6 = 168.5;
+		weight6 = 64.2;
+		lovefood6 = "オムライス";
+		
+		boolean over25 = (age6 >= 25);// 条件式
 		System.out.println(over25);//出力
+
+		System.out.println();
 		
 		//11.8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
 		String date1 = Integer.toString(age6);//年齢
@@ -180,17 +197,24 @@ public class Qes1_13 {
 		String date3= Double.toString(weight6);//体重
 		System.out.println(date1 + date2 + date3);//繋げる処理
 		
-		//12.11で変換した【年齢・身長】を整数型に変換して出力してください
-		int iAge = Integer.parseInt(date1);//年齢
-		System.out.println(iAge);//出力
+		System.out.println();
 		
-		int iHeight = Integer.parseInt(date2);//身長
-		System.out.println(iHeight);//出力
+		//12.11で変換した【年齢・身長】を整数型に変換して出力してください
+		int iAge = Integer.parseInt(date1); // 年齢
+		System.out.println(iAge); // 出力
+
+		int iHeight = (int) Double.parseDouble(date2); // 身長
+		System.out.println(iHeight); // 出力
+
+		System.out.println();
+
 		
 		//13.12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
 		boolean over; // boolean型の変数を宣言
-		over = (iAge >= 25 || iHeight >= 160); // 【条件式】
+		over = (iAge >= 25 || iHeight >= 160); // 条件式
 		System.out.println(over);//出力
+		
+		System.out.println();
 	}
 
 }
