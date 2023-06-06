@@ -188,7 +188,7 @@ public class Qes1_13 {
 		
 		boolean over25 = (age6 >= 25);// 条件式
 		System.out.println(over25);//出力
-
+		
 		System.out.println();
 		
 		//11.8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
