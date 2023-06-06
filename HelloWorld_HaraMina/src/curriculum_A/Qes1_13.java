@@ -205,9 +205,8 @@ public class Qes1_13 {
 
 		int iHeight = (int) Double.parseDouble(date2); // 身長
 		System.out.println(iHeight); // 出力
-
+		
 		System.out.println();
-
 		
 		//13.12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
 		boolean over; // boolean型の変数を宣言
