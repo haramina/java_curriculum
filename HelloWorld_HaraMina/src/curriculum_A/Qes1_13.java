@@ -229,7 +229,7 @@ public class Qes1_13 {
 		System.out.println("Q13");
 		// 条件式
 		boolean over = (iAge >= 25) || (iHeight >= 160);
-		System.out.println(over);
+		System.out.println((over) + "\n");
 	}
 	
 }
