@@ -19,7 +19,7 @@ public class Qes1_13 {
 		// ・文字型
 		char myChar;
 		// ・文字列型
-		String myName;
+		String myStr;
 		// ・ブーリアン型
 		boolean boolA;
 		
@@ -39,7 +39,7 @@ public class Qes1_13 {
 		// ・文字型の初期値を設定
 		myChar = '\u0000';
 		// ・文字列型の初期値を設定
-		myName =  null;
+		myStr =  null;
 		// ・ブーリアン型の初期値を設定
 		boolA = false;
 		
@@ -59,7 +59,7 @@ public class Qes1_13 {
 		// ・文字型 a
 		myChar = 'a';
 		// ・文字列型　ハロー
-		myName =  "ハロー";
+		myStr =  "ハロー";
 		// ・ブーリアン型 true
 		boolA = true;
 		
@@ -71,7 +71,7 @@ public class Qes1_13 {
 		// 20
 		System.out.println(byNum + byNum);
 		// a ハロー true
-		System.out.println(myChar + " " + myName + " " + boolA);
+		System.out.println(myChar + " " + myStr + " " + boolA);
 		// 11130 数字を全て足す
 		System.out.println(byNum + shNum + inNum + loNum + flNum + doNum);
 		// 10000000000  小数点以外の数字を全てかける
@@ -115,10 +115,10 @@ public class Qes1_13 {
 		System.out.println("体重は" + weight + "kgです");
 		
 		//「好きな食べ物は○○です」
-		String lovefood = "寿司";
-		System.out.println(("好きな食べ物は" + lovefood + "です") + "\n");
+		String loveFood = "寿司";
+		System.out.println("好きな食べ物は" + loveFood +  "です\n");
 		
-		/*7.6で作成した自己紹介に続いてBMIが出力されるようにしてください
+		/* 7.6で作成した自己紹介に続いてBMIが出力されるようにしてください
 		 * ただし計算は数値を直書きせず、全て変数を使ってすること
 		 * 「BMIは○○です」 */
 		// 課題名出力
@@ -126,10 +126,10 @@ public class Qes1_13 {
 		// BMI計算式 体重(kg) / (身長(m) * 身長(m))
 		double bmi = weight / ((height / 100) * (height / 100));
 		// 小数点第一位までに丸める
-		double roundedBMI = Math.round(bmi * 10.0) / 10.0;
-		System.out.println(("BMIは" + roundedBMI + "です") + "\n");
+		double roundedBmi = Math.round(bmi * 10.0) / 10.0;
+		System.out.println("BMIは" + roundedBmi +  "です\n");
 		
-		//　8.6で宣言した変数に再代入し下記の通りコンソールに出力してください
+		// 8.6で宣言した変数に再代入し下記の通りコンソールに出力してください
 		// 課題名出力
 		System.out.println("Q8");
 		// 初めまして鈴木一郎です
@@ -149,47 +149,47 @@ public class Qes1_13 {
 		System.out.println("体重は" + weight + "kgです");
 		
 		// 好きな食べ物はオムライスです
-		lovefood = "オムライス";
-		System.out.println("好きな食べ物は" + lovefood + "です");
+		loveFood = "オムライス";
+		System.out.println("好きな食べ物は" + loveFood + "です");
 		
 		// BMIは22.6です
 		// BMI計算式 体重(kg) / (身長(m) * 身長(m))
 		double bmi2 = weight / ((height / 100) * (height / 100));
 		// 小数点第一位までに丸める
-		double roundedBMI2 = Math.round(bmi2 * 10.0) / 10.0;
-		System.out.println(("BMIは" + roundedBMI2 + "です") + "\n");
+		double roundedBmi2 = Math.round(bmi2 * 10.0) / 10.0;
+		System.out.println("BMIは" + roundedBmi2 +  "です\n");
 		
-		//9.8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
+		// 9.8で使用した変数【年齢・身長・体重】の数値を和算で自己代入し、下記の通りコンソールに出力してください
 		// 課題名出力
 		System.out.println("Q9");
 		// 初めまして鈴木一郎です
 		name = "鈴木一郎";
 		System.out.println("初めまして" + name + "です"); 
 		
-		//　年齢は48歳です
+		// 年齢は48歳です
 		age += age;
 		System.out.println("年齢は" + age + "歳です");
 		
-		//　身長337.0cmです
+		// 身長337.0cmです
 		height += height;
 		System.out.println("身長は" + height + "cmです");
 		
-		//　体重は128.4kgです
+		// 体重は128.4kgです
 		weight += weight;
 		System.out.println("体重は" + weight + "kgです");
 		
-		//　好きな食べ物はオムライスです
-		lovefood = "オムライス";
-		System.out.println("好きな食べ物は" + lovefood + "です");
+		// 好きな食べ物はオムライスです
+		loveFood = "オムライス";
+		System.out.println("好きな食べ物は" + loveFood + "です");
 		
 		// BMIは11.31です
 		// BMI計算式 体重(kg) / (身長(m) * 身長(m))
 		double bmi3 = weight / ((height / 100) * (height / 100));
 		// 小数点第二位までに丸める
-		double roundedBMI3 = Math.round(bmi3 * 100.0) / 100.0;
-		System.out.println(("BMIは" + roundedBMI3 + "です") + "\n");
+		double roundedBmi3 = Math.round(bmi3 * 100.0) / 100.0;
+		System.out.println("BMIは" + roundedBmi3 +  "です\n");
 		
-		//10.8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
+		// 10.8で使用した年齢が25歳以上ならtrueが出力されるようにしてください。ただしif文は使いません
 		// 課題名出力
 		System.out.println("Q10");
 		// 問8の値を再代入
@@ -197,12 +197,12 @@ public class Qes1_13 {
 		age = 24;
 		height = 168.5;
 		weight = 64.2;
-		lovefood = "オムライス";
+		loveFood = "オムライス";
 		// 条件式
 		boolean over25 = (age >= 25);
 		System.out.println((over25) + "\n");
 		
-		//11.8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
+		// 11.8で使用した【年齢・身長・体重】を文字列型に型変換し繋げて出力してください
 		// 課題名出力
 		System.out.println("Q11");
 		// 年齢
@@ -214,17 +214,17 @@ public class Qes1_13 {
 		// 繋げる処理
 		System.out.println((date1 + date2 + date3) + "\n");
 		
-		//12.11で変換した【年齢・身長】を整数型に変換して出力してください
+		// 12.11で変換した【年齢・身長】を整数型に変換して出力してください
 		// 課題名出力
 		System.out.println("Q12");
 		// 年齢
 		int iAge = Integer.parseInt(date1);
 		System.out.println(iAge);
 		// 身長
-		int iHeight = (int) Double.parseDouble(date2);
+		int iHeight = (int)Double.parseDouble(date2);
 		System.out.println((iHeight) + "\n");
 		
-		//13.12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
+		// 13.12で変換した【年齢・身長】で【年齢が25もしくは身長が160以上】であればtrueを出力してください
 		// 課題名出力
 		System.out.println("Q13");
 		// 条件式
